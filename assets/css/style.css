@@ -348,7 +348,6 @@ img {
 .l-footer {
   background-color: var(--footer-color);
   padding: 3.125rem 0;
-  margin-top: var(--mb-2);
 }
 
 .footer__details {
@@ -398,12 +397,18 @@ img {
 /*=-= Contact Area =-=*/
 .contact-bg {
   background-color: #f2f3fe;
-  margin: var(--mb-6) 0;
+  margin-top: var(--mb-6);
   padding: 3rem 0 1rem;
 }
 
 .contact {
   grid-row-gap: 0.5rem;
+}
+
+.contact-title {
+  text-align: center;
+  padding-top: var(--mb-4);
+  font-size: var(--medium-font-size);
 }
 
 .contact__input {
