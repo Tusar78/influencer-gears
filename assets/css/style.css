@@ -86,8 +86,8 @@ p {
 }
 
 p {
-    /*=-= Recommended line height =-=*/
-    line-height: 1.6;
+  /*=-= Recommended line height =-=*/
+  line-height: 1.6;
 }
 
 ul {
@@ -228,46 +228,105 @@ img {
 }
 
 .home__description {
-    text-align: center;
+  text-align: center;
 }
 
 .home__title {
-    font-size: var(--big-font-size);
-    color: var(--secondary-color);
-    font-weight: var(--bold);
-    margin-bottom: var(--mb-1);
+  font-size: var(--big-font-size);
+  color: var(--secondary-color);
+  font-weight: var(--bold);
+  margin-bottom: var(--mb-1);
 }
 
 .home__text {
-    font-size: var(--normal-font-size);
-    color: var(--secondary-color);
-    font-weight: var(--semi-bold);
+  font-size: var(--normal-font-size);
+  color: var(--secondary-color);
+  font-weight: var(--semi-bold);
 }
 
 .btn {
-    display: inline-block;
-    padding: .625rem 1.5rem;
-    background-color: gray;
-    color: #fff;
-    /* fixed font size */
-    font-size: 1rem;
-    font-weight: var(--semi-bold);
-    border: 0;
-    margin-top: var(--mb-3);
+  display: inline-block;
+  padding: 0.625rem 1.5rem;
+  background-color: gray;
+  color: #fff;
+  /* fixed font size */
+  font-size: 1rem;
+  font-weight: var(--semi-bold);
+  border: 0;
+  margin-top: var(--mb-3);
 }
 
 .btn i {
-    transform: translateY(2px) rotate(180deg);
-    padding-right: .625rem;
-    font-weight: var(--semi-bold);
+  transform: translateY(2px) rotate(180deg);
+  padding-right: 0.625rem;
+  font-weight: var(--semi-bold);
 }
 
 .btn--primary {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .btn--round {
-    border-radius: 40px;
+  border-radius: 40px;
 }
 
 /* =-= Company log area =-=*/
+.companies {
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-column-gap: 0.2rem;
+}
+
+/* =-= Popular Collection =-=*/
+.collections {
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 1rem;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+
+.collection__image {
+  align-self: center;
+}
+
+.collection__title {
+  /* override */
+  --medium-font-size: 1.75rem;
+
+  font-size: var(--medium-font-size);
+  font-weight: var(--bold);
+  color: var(--gray-color);
+  margin-top: var(--mb-2);
+}
+
+.collection__price {
+  font-size: 1.5rem;
+  font-weight: var(--bold);
+  margin-bottom: var(--mb-1);
+}
+
+.collection__rating {
+  display: flex;
+  text-align: center;
+}
+
+.collection__rating--star {
+  margin-right: var(--mb-2);
+}
+
+.collection__rating--star i {
+  color: orange;
+}
+
+.collection__rating--text {
+  color: #5e6366;
+  font-weight: var(--bold);
+  margin-bottom: var(--mb-1);
+  font-size: 0.875rem;
+}
