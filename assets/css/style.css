@@ -272,6 +272,14 @@ img {
   border-radius: 40px;
 }
 
+.btn-effect i {
+  transition: 0.3s ease-in-out;
+}
+
+.btn-effect:hover i {
+  padding-right: 1rem;
+}
+
 /* =-= Company log area =-=*/
 .collection-title {
   text-align: center;
