@@ -450,6 +450,7 @@ img {
   margin-top: var(--mb-3);
   background-color: var(--primary-color);
   color: var(--white-color);
+  cursor: pointer;
 }
 
 .contact__img {
@@ -547,6 +548,10 @@ img {
     margin-left: auto;
     margin-right: auto;
     grid-gap: 2rem;
+  }
+
+  .collection {
+    width: auto;
   }
 
   .collection__title {
