@@ -7,7 +7,7 @@
 - Declare some important variable
 / =-=-=-=-=-= */
 :root {
-  --header-height: 3.5rem;
+  --header-height: 4.5rem;
 
   /* =-= Font Weight  =-= */
   --regular: 400;
@@ -48,6 +48,7 @@
 
 @media screen and (max-width: 767.98px) {
   :root {
+    --header-height: 3.5rem;
     --big-font-size: 1.75rem;
     --medium-font-size: 1rem;
     --normal-font-size: 0.875rem;
@@ -380,4 +381,39 @@ img {
   font-size: 16px;
   line-height: 28px;
   color: var(--white-color);
+}
+
+/*=-= Desktop View =-=*/
+@media screen and (min-width: 992.98px) {
+  .section {
+    padding-top: 3rem;
+  }
+
+  .nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__item {
+    margin-bottom: 0;
+  }
+
+  .nav__item:not(:first-child) {
+    margin-left: var(--mb-4);
+  }
+
+  .nav__link {
+    font-size: 1rem;
+    font-weight: var(--medium-bold);
+    color: var(--secondary-color);
+  }
+
+  .nav__toggle,
+  .nav__cart {
+    display: none;
+  }
 }
