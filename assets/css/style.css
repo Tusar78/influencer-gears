@@ -398,7 +398,7 @@ img {
 .contact-bg {
   background-color: #f2f3fe;
   margin-top: var(--mb-6);
-  padding: 3rem 0 1rem;
+  padding: 2rem 0 1rem;
 }
 
 .contact {
@@ -407,7 +407,7 @@ img {
 
 .contact-title {
   text-align: center;
-  padding-top: var(--mb-4);
+  padding-bottom: var(--mb-4);
   font-size: var(--medium-font-size);
 }
 
@@ -522,6 +522,11 @@ img {
 
   .collection__text {
     font-weight: var(--bold);
+  }
+
+  .contact-title {
+    padding-top: var(--mb-4);
+    padding-bottom: 0;
   }
 
   .contact {
