@@ -415,7 +415,7 @@ img {
 
 .contact-title {
   text-align: center;
-  padding-bottom: var(--mb-4);
+  padding-bottom: 0;
   font-size: var(--medium-font-size);
 }
 
@@ -449,6 +449,10 @@ img {
   margin-top: var(--mb-3);
   background-color: var(--primary-color);
   color: var(--white-color);
+}
+
+.contact__img {
+  grid-area: 1/1/2/2;
 }
 
 /*=-= Desktop View =-=*/
@@ -531,6 +535,10 @@ img {
   .collection__text {
     font-weight: var(--bold);
   }
+  
+  .contact-bg {
+    padding: 0;
+  }
 
   .contact-title {
     padding-top: var(--mb-4);
@@ -544,7 +552,7 @@ img {
     align-items: center;
   }
 
-  .contact-bg {
-    padding: 0;
+  .contact__img {
+    grid-area: 1/2/2/3;
   }
 }
