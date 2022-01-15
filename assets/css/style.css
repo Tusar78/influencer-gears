@@ -292,6 +292,10 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   grid-gap: 1.5rem;
   align-items: center;
+  border-top: 1px solid #dae1e9;
+  padding: 1rem 0;
+  border-bottom: 1px solid #dae1e9;
+}
 }
 
 /* =-= Popular Collection =-=*/
