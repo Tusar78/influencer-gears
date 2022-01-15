@@ -395,6 +395,49 @@ img {
   color: var(--white-color);
 }
 
+/*=-= Contact Area =-=*/
+.contact-bg {
+  background-color: #f2f3fe;
+  margin: var(--mb-6) 0;
+  padding: 3rem 0 1rem;
+}
+
+.contact {
+  grid-row-gap: 0.5rem;
+}
+
+.contact__input {
+  display: inline-block;
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 0;
+  border-radius: 0.4rem;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  margin-bottom: var(--mb-2);
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+  outline: 0;
+}
+
+.contact__form textarea {
+  height: 150px;
+  max-width: 100%;
+  width: 100%;
+  border: 0;
+  border-radius: 0.4rem;
+  outline: 0;
+  padding: 0.625rem 0.75rem;
+  font-family: var(--primary-font);
+  font-size: 1rem;
+}
+
+.contact__input--submit {
+  margin-top: var(--mb-3);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
 /*=-= Desktop View =-=*/
 @media screen and (min-width: 992.98px) {
   .section {
@@ -474,5 +517,16 @@ img {
 
   .collection__text {
     font-weight: var(--bold);
+  }
+
+  .contact {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  .contact-bg {
+    padding: 0;
   }
 }
