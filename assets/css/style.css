@@ -85,6 +85,11 @@ p {
   padding: 0;
 }
 
+p {
+    /*=-= Recommended line height =-=*/
+    line-height: 1.6;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -102,7 +107,7 @@ img {
 }
 
 .section {
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -212,3 +217,57 @@ img {
 .nav__cart > img {
   width: 24px;
 }
+
+/*=-= Home Section =-=*/
+.home {
+  grid-row-gap: 1.5rem;
+}
+
+.home__image {
+  grid-area: 1/1/2/2;
+}
+
+.home__description {
+    text-align: center;
+}
+
+.home__title {
+    font-size: var(--big-font-size);
+    color: var(--secondary-color);
+    font-weight: var(--bold);
+    margin-bottom: var(--mb-1);
+}
+
+.home__text {
+    font-size: var(--normal-font-size);
+    color: var(--secondary-color);
+    font-weight: var(--semi-bold);
+}
+
+.btn {
+    display: inline-block;
+    padding: .625rem 1.5rem;
+    background-color: gray;
+    color: #fff;
+    /* fixed font size */
+    font-size: 1rem;
+    font-weight: var(--semi-bold);
+    border: 0;
+    margin-top: var(--mb-3);
+}
+
+.btn i {
+    transform: translateY(2px) rotate(180deg);
+    padding-right: .625rem;
+    font-weight: var(--semi-bold);
+}
+
+.btn--primary {
+    background-color: var(--primary-color);
+}
+
+.btn--round {
+    border-radius: 40px;
+}
+
+/* =-= Company log area =-=*/
