@@ -296,12 +296,11 @@ img {
   padding: 1rem 0;
   border-bottom: 1px solid #dae1e9;
 }
-}
 
 /* =-= Popular Collection =-=*/
 .collections {
   grid-template-columns: repeat(1, 1fr);
-  grid-row-gap: 1rem;
+  grid-row-gap: 2rem;
 }
 
 .collection {
