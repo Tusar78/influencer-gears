@@ -227,6 +227,7 @@ img {
 
 .home__image {
   grid-area: 1/1/2/2;
+  justify-self: center;
 }
 
 .home__description {
@@ -393,7 +394,7 @@ img {
 }
 
 .footer__link:not(:first-child) {
-  margin-left: var(--mb-1);
+  margin-left: var(--mb-2);
 }
 
 .footer__icon {
@@ -406,7 +407,7 @@ img {
 .contact-bg {
   background-color: #f2f3fe;
   margin-top: var(--mb-6);
-  padding: 2rem 0 1rem;
+  padding: 2rem 0;
 }
 
 .contact {
@@ -455,19 +456,22 @@ img {
   grid-area: 1/1/2/2;
 }
 
-/*=-= Desktop View =-=*/
-@media screen and (min-width: 992.98px) {
-  .section {
-    padding-top: 3rem;
+@media screen and (max-width: 767.98px) {
+  .collection {
+    width: 328px;
+    justify-self: center;
   }
+}
 
+/*=-= Tablet View =-=*/
+@media screen and (min-width: 768.98px) {
   .nav {
     margin-left: auto;
     margin-right: auto;
   }
 
   .nav__logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .nav__list {
@@ -491,6 +495,27 @@ img {
   .nav__toggle,
   .nav__cart {
     display: none;
+  }
+
+  .collections {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+
+  .collection {
+    width: 328px;
+    justify-self: center;
+  }
+}
+
+/*=-= Desktop View =-=*/
+@media screen and (min-width: 992.98px) {
+  .section {
+    padding-top: 3rem;
+  }
+
+  .nav__logo {
+    font-size: 1.5rem;
   }
 
   .home {
@@ -535,7 +560,7 @@ img {
   .collection__text {
     font-weight: var(--bold);
   }
-  
+
   .contact-bg {
     padding: 0;
   }
